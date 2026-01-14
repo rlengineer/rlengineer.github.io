@@ -1,5 +1,5 @@
 @import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
+/*@import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");*/
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -213,7 +213,7 @@ input, select, textarea {
 	}
 
 	body, input, select, textarea {
-		font-family: "Merriweather", Georgia, serif;
+		font-family: "Inter", sans-serif;
 		font-weight: 300;
 		font-size: 1rem;
 		line-height: 2.375;
@@ -245,8 +245,26 @@ input, select, textarea {
 		margin: 0 0 2rem 0;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+	h1 {
+		font-family: "Playfair Display", serif;
+		font-weight: 700;
+		line-height: 1.5;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		margin: 0 0 1rem 0;
+	}
+
+	h2 {
+		font-family: "Playfair Display", serif;
+		font-weight: 600;
+		line-height: 1.5;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+		margin: 0 0 1.8rem 0;
+	}
+
+	h3, h4, h5, h6 {
+		font-family: "Playfair Display", serif;
 		font-weight: 900;
 		line-height: 1.5;
 		letter-spacing: 0.075em;
@@ -363,7 +381,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #18bfef !important;
+			color: rgba(200, 75, 49, 0.7) !important;
 		}
 
 	strong, b {
@@ -385,6 +403,19 @@ input, select, textarea {
 
 	hr {
 		border-bottom-color: #eeeeee;
+	}
+
+	.page-heading-opacity {
+		opacity: 0.85;
+  		letter-spacing: 0.14em;
+	}
+
+	.page-heading-spacing-small {
+		margin-bottom: .6em; 
+	}
+
+	.page-heading-spacing-large {
+		margin-bottom: 1.8em; 
 	}
 
 /* Row */
@@ -2143,7 +2174,7 @@ input, select, textarea {
 		border-radius: 0;
 		cursor: pointer;
 		display: inline-block;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: "Inter", sans-serif;
 		font-size: 0.8rem;
 		font-weight: 900;
 		letter-spacing: 0.075em;
@@ -2280,8 +2311,8 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			box-shadow: inset 0 0 0 2px #18bfef;
-			color: #18bfef !important;
+			box-shadow: inset 0 0 0 2px rgba(200, 75, 49, 0.7);
+			color: rgba(200, 75, 49, 0.7) !important;
 		}
 
 		input[type="submit"].primary,
@@ -2299,7 +2330,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #18bfef;
+				background-color: rgba(200, 75, 49, 0.7);
 			}
 
 /* Form */
@@ -2378,7 +2409,7 @@ input, select, textarea {
 
 	label {
 		display: block;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: "Inter", sans-serif;
 		font-weight: 900;
 		line-height: 1.5;
 		letter-spacing: 0.075em;
@@ -2472,7 +2503,7 @@ input, select, textarea {
 			display: inline-block;
 			font-size: 1rem;
 			letter-spacing: 0;
-			font-family: "Merriweather", Georgia, serif;
+			font-family: "Inter", sans-serif;
 			text-transform: none;
 			font-weight: 300;
 			padding-left: 2.8rem;
@@ -2556,7 +2587,7 @@ input, select, textarea {
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #18bfef;
+			border-color: rgba(200, 75, 49, 0.7);
 		}
 
 	select {
@@ -2591,7 +2622,7 @@ input, select, textarea {
 
 	input[type="checkbox"]:focus + label:before,
 	input[type="radio"]:focus + label:before {
-		border-color: #18bfef;
+		border-color: rgba(200, 75, 49, 0.7);
 	}
 
 	::-webkit-input-placeholder {
@@ -2959,7 +2990,7 @@ input, select, textarea {
 	}
 
 	ul.icons li a.icon:hover:before {
-		color: #18bfef;
+		color: rgba(200, 75, 49, 0.7);
 	}
 
 	ul.icons.alt li .icon:before {
@@ -2967,7 +2998,7 @@ input, select, textarea {
 	}
 
 	ul.icons.alt li a.icon:hover:before {
-		box-shadow: inset 0 0 0 2px #18bfef;
+		box-shadow: inset 0 0 0 2px rgba(200, 75, 49, 0.7);
 	}
 
 /* Section/Article */
@@ -2986,10 +3017,6 @@ input, select, textarea {
 			height: 1;
 			margin: 0 0 1rem 0;
 			position: relative;
-		}
-
-		header > p {
-			font-style: italic;
 		}
 
 		header > h1 + p {
@@ -3092,7 +3119,7 @@ input, select, textarea {
 		}
 
 		table th {
-			font-family: "Source Sans Pro", Helvetica, sans-serif;
+			font-family: "Inter", sans-serif;
 			font-size: 0.8rem;
 			font-weight: 900;
 			letter-spacing: 0.075em;
@@ -3192,7 +3219,7 @@ input, select, textarea {
 			transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
 			border: solid 2px;
 			display: inline-block;
-			font-family: "Source Sans Pro", Helvetica, sans-serif;
+			font-family: "Inter", sans-serif;
 			font-size: 0.8rem;
 			font-weight: 900;
 			height: 3rem;
@@ -3266,14 +3293,14 @@ input, select, textarea {
 	}
 
 		.pagination a:hover {
-			color: #18bfef !important;
-			border-color: #18bfef;
+			color: rgba(200, 75, 49, 0.7) !important;
+			border-color: rgba(200, 75, 49, 0.7);
 			z-index: 1;
 		}
 
 			.pagination a:hover + a,
 			.pagination a:hover + span {
-				border-left-color: #18bfef;
+				border-left-color: rgba(200, 75, 49, 0.7);
 			}
 
 		.pagination a.active {
@@ -3303,7 +3330,17 @@ input, select, textarea {
 			width: 100%;
 			height: 100%;
 			background-color: #212931;
-			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
+			background-image: url("../../images/overlay.png"), 
+			linear-gradient(
+				rgba(0, 0, 0, 0.15),
+				rgba(0, 0, 0, 0.15)
+			),
+			linear-gradient(
+				135deg,
+				#2F3E48 0%,
+				#5A524A 42%,
+				#1B2A33 100%
+			);
 			background-size: auto,								auto,														100% auto;
 			background-position: center,								center,														top center;
 			background-repeat: repeat,								no-repeat,													no-repeat;
@@ -3393,7 +3430,7 @@ input, select, textarea {
 
 			#intro a:hover {
 				border-bottom-color: transparent;
-				color: #18bfef !important;
+				color: rgba(200, 75, 49, 0.7) !important;
 			}
 
 		#intro strong, #intro b {
@@ -3432,8 +3469,8 @@ input, select, textarea {
 			#intro input[type="button"]:hover,
 			#intro button:hover,
 			#intro .button:hover {
-				box-shadow: inset 0 0 0 2px #18bfef;
-				color: #18bfef !important;
+				box-shadow: inset 0 0 0 2px rgba(200, 75, 49, 0.7);
+				color: rgba(200, 75, 49, 0.7) !important;
 			}
 
 			#intro input[type="submit"].primary,
@@ -3451,7 +3488,7 @@ input, select, textarea {
 				#intro input[type="button"].primary:hover,
 				#intro button.primary:hover,
 				#intro .button.primary:hover {
-					background-color: #18bfef;
+					background-color: rgba(200, 75, 49, 0.7);
 				}
 
 		#intro h1 {
@@ -3461,9 +3498,10 @@ input, select, textarea {
 
 		#intro p {
 			font-size: 1.25rem;
-			font-style: italic;
 			margin-top: -0.25rem;
+			line-height: 1.7;
 			text-align: center;
+			color: rgba(240, 229, 216, 0.9);
 		}
 
 		#intro + #header {
@@ -3602,7 +3640,7 @@ input, select, textarea {
 
 			#header a:hover {
 				border-bottom-color: transparent;
-				color: #18bfef !important;
+				color: rgba(200, 75, 49, 0.7) !important;
 			}
 
 		#header strong, #header b {
@@ -3635,7 +3673,7 @@ input, select, textarea {
 			border-style: solid;
 			border-color: #ffffff;
 			border-width: 5px !important;
-			font-family: "Source Sans Pro", Helvetica, sans-serif;
+			font-family: "Inter", sans-serif;
 			font-size: 2.25rem;
 			font-weight: 900;
 			letter-spacing: 0.075em;
@@ -3646,8 +3684,8 @@ input, select, textarea {
 		}
 
 			#header .logo:hover {
-				border-color: #18bfef !important;
-				color: #18bfef !important;
+				border-color: rgba(200, 75, 49, 0.7) !important;
+				color: rgba(200, 75, 49, 0.7) !important;
 			}
 
 		@media screen and (max-width: 980px) {
@@ -3701,7 +3739,7 @@ input, select, textarea {
 		}
 
 		#nav ul.icons li a.icon:hover:before {
-			color: #18bfef;
+			color: rgba(200, 75, 49, 0.7);
 		}
 
 		#nav ul.icons.alt li .icon:before {
@@ -3709,7 +3747,7 @@ input, select, textarea {
 		}
 
 		#nav ul.icons.alt li a.icon:hover:before {
-			box-shadow: inset 0 0 0 2px #18bfef;
+			box-shadow: inset 0 0 0 2px rgba(200, 75, 49, 0.7);
 		}
 
 		#nav input, #nav select, #nav textarea {
@@ -3723,7 +3761,7 @@ input, select, textarea {
 
 			#nav a:hover {
 				border-bottom-color: transparent;
-				color: #18bfef !important;
+				color: rgba(200, 75, 49, 0.7) !important;
 			}
 
 		#nav strong, #nav b {
@@ -3760,7 +3798,7 @@ input, select, textarea {
 			-webkit-flex-shrink: 1;
 			-ms-flex-shrink: 1;
 			flex-shrink: 1;
-			font-family: "Source Sans Pro", Helvetica, sans-serif;
+			font-family: "Inter", sans-serif;
 			font-weight: 900;
 			letter-spacing: 0.075em;
 			list-style: none;
@@ -3799,7 +3837,7 @@ input, select, textarea {
 					}
 
 						#nav ul.links li.active a:hover {
-							color: #18bfef !important;
+							color: rgba(200, 75, 49, 0.7) !important;
 						}
 
 		#nav ul.icons {
@@ -4043,7 +4081,7 @@ input, select, textarea {
 
 			#footer a:hover {
 				border-bottom-color: transparent;
-				color: #18bfef !important;
+				color: rgba(200, 75, 49, 0.7) !important;
 			}
 
 		#footer strong, #footer b {
@@ -4086,8 +4124,8 @@ input, select, textarea {
 			#footer input[type="button"]:hover,
 			#footer button:hover,
 			#footer .button:hover {
-				box-shadow: inset 0 0 0 2px #18bfef;
-				color: #18bfef !important;
+				box-shadow: inset 0 0 0 2px rgba(200, 75, 49, 0.7);
+				color: rgba(200, 75, 49, 0.7) !important;
 			}
 
 			#footer input[type="submit"].primary,
@@ -4105,7 +4143,7 @@ input, select, textarea {
 				#footer input[type="button"].primary:hover,
 				#footer button.primary:hover,
 				#footer .button.primary:hover {
-					background-color: #18bfef;
+					background-color: rgba(200, 75, 49, 0.7);
 				}
 
 		#footer label {
@@ -4125,7 +4163,7 @@ input, select, textarea {
 			#footer input[type="email"]:focus,
 			#footer select:focus,
 			#footer textarea:focus {
-				border-color: #18bfef;
+				border-color: rgba(200, 75, 49, 0.7);
 			}
 
 		#footer select {
@@ -4160,7 +4198,7 @@ input, select, textarea {
 
 		#footer input[type="checkbox"]:focus + label:before,
 		#footer input[type="radio"]:focus + label:before {
-			border-color: #18bfef;
+			border-color: rgba(200, 75, 49, 0.7);
 		}
 
 		#footer ::-webkit-input-placeholder {
@@ -4188,7 +4226,7 @@ input, select, textarea {
 		}
 
 		#footer ul.icons li a.icon:hover:before {
-			color: #18bfef;
+			color: rgba(200, 75, 49, 0.7);
 		}
 
 		#footer ul.icons.alt li .icon:before {
@@ -4196,7 +4234,7 @@ input, select, textarea {
 		}
 
 		#footer ul.icons.alt li a.icon:hover:before {
-			box-shadow: inset 0 0 0 2px #18bfef;
+			box-shadow: inset 0 0 0 2px rgba(200, 75, 49, 0.7);
 		}
 
 		#footer header.major .date:before, #footer header.major .date:after {
@@ -4236,14 +4274,14 @@ input, select, textarea {
 		}
 
 			#footer .pagination a:hover {
-				color: #18bfef !important;
-				border-color: #18bfef;
+				color: rgba(200, 75, 49, 0.7) !important;
+				border-color: rgba(200, 75, 49, 0.7);
 				z-index: 1;
 			}
 
 				#footer .pagination a:hover + a,
 				#footer .pagination a:hover + span {
-					border-left-color: #18bfef;
+					border-left-color: rgba(200, 75, 49, 0.7);
 				}
 
 			#footer .pagination a.active {
@@ -4456,7 +4494,7 @@ input, select, textarea {
 		position: relative;
 		color: rgba(255, 255, 255, 0.25);
 		cursor: default;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: "Inter", sans-serif;
 		font-size: 0.8rem;
 		font-weight: 900;
 		letter-spacing: 0.075em;
@@ -4480,7 +4518,7 @@ input, select, textarea {
 
 			#copyright a:hover {
 				border-bottom-color: transparent;
-				color: #18bfef !important;
+				color: rgba(200, 75, 49, 0.7) !important;
 			}
 
 		#copyright strong, #copyright b {
@@ -4566,7 +4604,7 @@ input, select, textarea {
 		right: 0.75rem;
 		border: 0;
 		color: #ffffff;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: "Inter", sans-serif;
 		font-size: 0.9rem;
 		font-weight: 900;
 		letter-spacing: 0.075em;
@@ -4658,7 +4696,7 @@ input, select, textarea {
 				#navPanel .links li a {
 					border-bottom: 0;
 					display: block;
-					font-family: "Source Sans Pro", Helvetica, sans-serif;
+					font-family: "Inter", sans-serif;
 					font-size: 0.9rem;
 					font-size: 0.9rem;
 					font-weight: 900;
